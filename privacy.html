@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZNM Privacy Policy</title>
+<meta name="description" content="ZNM collects nothing and sends nothing to us. No servers, no accounts, no analytics. Everything happens on your phone.">
+<link rel="canonical" href="https://znm.ab.team/privacy.html">
+<meta name="theme-color" content="#050508">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="preload" href="assets/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Bricolage";src:url(assets/bricolage.woff2) format("woff2");font-weight:200 800;font-display:swap}
+@view-transition{navigation:auto}
+:root{--bg:#050508;--text:#f2f4f8;--muted:#9aa6b8;--line:rgb(255 255 255/.08);--aurora:linear-gradient(100deg,#1ad8ff,#4d6bff 35%,#c23bff 68%,#ff3b8b);color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.7 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+a:focus-visible{outline:2px solid #1ad8ff;outline-offset:3px}
+header{view-transition-name:hdr;border-bottom:1px solid var(--line)}
+.wrap{width:min(760px,100% - 32px);margin-inline:auto}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;width:min(1180px,100% - 32px)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 21px/1 "Bricolage",system-ui,sans-serif;letter-spacing:-.02em}
+.logo img{width:34px;height:34px;border-radius:9px}
+main{padding:72px 0 96px}
+h1{font:800 clamp(44px,8vw,80px)/1 "Bricolage",system-ui,sans-serif;letter-spacing:-.045em;margin:0 0 12px}
+h1 span{background:var(--aurora);-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font:700 26px/1.2 "Bricolage",system-ui,sans-serif;letter-spacing:-.02em;margin:48px 0 12px}
+p,li{color:var(--muted)}
+strong{color:var(--text)}
+.date{font-size:14px;margin-bottom:40px}
+.short{padding:24px 28px;border-radius:20px;border:1px solid var(--line);background:#0e1017;color:var(--text)}
+footer{border-top:1px solid var(--line);padding:32px 0 48px;color:#7d8799;font-size:14px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="/"><img src="assets/icon-96.webp" width="34" height="34" alt="">ZNM</a><a href="/">← Back</a></div></header>
+<main class="wrap">
+<h1>Privacy <span>policy</span></h1>
+<p class="date">Last updated: 8 October 2026</p>
+<p>ZNM (“the app”) is a notification helper for Amazfit / Zepp OS watches. This policy explains what the app does and does not do with your data.</p>
+
+<h2>The short version</h2>
+<p class="short">ZNM collects nothing and sends nothing to us. There are no servers of ours, no accounts, no analytics and no ads. Everything happens on your phone. The app goes online for one thing only: fetching link previews straight from the linked site (see below), which you can switch off.</p>
+
+<h2>What the app accesses</h2>
+<p>ZNM uses Android’s <strong>Notification access</strong>. While that access is granted, Android lets the app see your notifications and when they are removed. ZNM uses it to:</p>
+<ul>
+<li><strong>Mark as read:</strong> notice that your watch removed a notification and trigger that notification’s own “mark as read” action.</li>
+<li><strong>Deliver via ZNM</strong> (only for apps you switch to it): read the notification’s title, recent messages, sender names and image, and post ZNM’s own copy of it on your phone. The Zepp app forwards that copy to your watch, exactly as it forwards any other notification. When the original notification goes away, ZNM removes its copy.</li>
+<li><strong>Replies:</strong> a reply you send from the watch on a ZNM copy is handed to the original app’s own reply action, as if you had replied from the phone’s notification.</li>
+</ul>
+<p>ZNM never uploads notification content anywhere. For apps not switched to Deliver via ZNM, it does not read message text at all.</p>
+
+<h2>Link previews</h2>
+<p>When a message ZNM shows on your watch contains a link, ZNM can fetch that link’s preview picture so the watch can show it, the way messengers do. Your phone requests the page or image directly from the site the link points to; nothing passes through us. As with opening any link, that site sees an ordinary request from your phone’s internet connection. Links to your own local network are never fetched. You can turn this off at any time in <strong>Settings → Link previews</strong>.</p>
+
+<h2>What the app stores</h2>
+<p>On your device only, in the app’s private storage, ZNM keeps:</p>
+<ul>
+<li>your settings: which apps are switched off, which use Deliver via ZNM, and whether link previews are on,</li>
+<li>a short rolling on-screen activity log (app name, event type and time, never message text), capped at the most recent entries,</li>
+<li>while a ZNM copy is showing, a scaled-down copy of its picture, deleted as soon as the copy is removed or replaced.</li>
+</ul>
+<p>The text of a ZNM copy lives in that notification only, like any other notification on your phone, and disappears with it. None of this data leaves your phone, it is excluded from backups, and it is deleted when you uninstall the app or clear its data.</p>
+
+<h2>What the app shares</h2>
+<p>Nothing with us or any third party. There are no analytics, no advertising, no third-party SDKs, and no servers of ours. The only network requests are the link-preview fetches described above, made directly to the linked site.</p>
+
+<h2>Children</h2>
+<p>ZNM is a utility with no content directed at children and collects no personal data.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy or the app: <a href="mailto:watch@ab.team"><strong>watch@ab.team</strong></a></p>
+</main>
+<footer><div class="wrap">© 2026 Active Bridge, LLC</div></footer>
+</body>
+</html>
