@@ -58,7 +58,7 @@ p{margin:0;text-wrap:pretty}
 .btn-main:hover{box-shadow:0 0 0 1px #fff,0 16px 50px -8px rgb(194 59 255/.8)}
 .btn-ghost{border:1px solid var(--line);background:rgb(255 255 255/.03);backdrop-filter:blur(8px)}
 .btn-ghost:hover{background:rgb(255 255 255/.08)}
-.play{display:inline-flex;align-items:center;gap:12px;padding:10px 18px 10px 14px;border-radius:14px;border:1px solid var(--line);background:rgb(255 255 255/.03);text-align:left;font:500 12px/1.2 var(--sans);color:var(--muted)}
+.play{text-decoration:none;display:inline-flex;align-items:center;gap:12px;padding:10px 18px 10px 14px;border-radius:14px;border:1px solid var(--line);background:rgb(255 255 255/.03);text-align:left;font:500 12px/1.2 var(--sans);color:var(--muted)}
 .play b{display:block;font:600 16px/1.2 var(--sans);color:var(--text)}
 .play svg{width:24px;height:24px}
 
@@ -549,7 +549,7 @@ footer nav{display:flex;margin:0;gap:22px}
     <nav aria-label="Main">
       <a href="#how">How it works</a><a href="#notify">Notify+</a><a href="#privacy">Privacy</a><a href="#tradeoffs">Trade-offs</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a>
     </nav>
-    <a class="btn btn-main" href="mailto:watch@ab.team?subject=ZNM%20beta&amp;body=Hi%21%20I%27d%20like%20to%20test%20ZNM.%0A%0AGoogle%20account%20email%20%28for%20Google%20Play%29%3A%20%0AWatch%20model%20%28e.g.%20Balance%202%2C%20Active%202%2C%20T-Rex%203%29%3A%20%0APhone%20model%20%2B%20Android%20version%3A%20%0A" target="_blank" rel="noopener">Join the beta</a>
+    <a class="btn btn-main" href="https://play.google.com/store/apps/details?id=team.ab.znm" target="_blank" rel="noopener">Get it on Google Play</a>
   </div>
 </header>
 
@@ -561,7 +561,7 @@ footer nav{display:flex;margin:0;gap:22px}
       <h1>Clear it <em class="grad">once.</em></h1>
       <p class="lead in" style="--i:2">Your Amazfit can only delete a notification, so the chat stays unread on your phone. ZNM turns that delete into <b>“mark as read”</b>. Then it goes further: one entry per chat, clean text, link previews and real buttons on your wrist.</p>
       <div class="ctas in" style="--i:3">
-        <span class="play" aria-label="Coming soon to Google Play"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="pg" x1="0" x2="1"><stop offset="0" stop-color="#1ad8ff"/><stop offset=".5" stop-color="#4d6bff"/><stop offset="1" stop-color="#ff3b8b"/></linearGradient></defs><path fill="url(#pg)" d="M4 2.8v18.4c0 .6.6 1 1.2.7L21 13c.5-.3.5-1.1 0-1.4L5.2 2.1C4.6 1.8 4 2.2 4 2.8Z"/></svg><span>Coming soon to<b>Google Play</b></span></span>
+        <a class="play" href="https://play.google.com/store/apps/details?id=team.ab.znm" target="_blank" rel="noopener" aria-label="Get it on Google Play"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="pg" x1="0" x2="1"><stop offset="0" stop-color="#1ad8ff"/><stop offset=".5" stop-color="#4d6bff"/><stop offset="1" stop-color="#ff3b8b"/></linearGradient></defs><path fill="url(#pg)" d="M4 2.8v18.4c0 .6.6 1 1.2.7L21 13c.5-.3.5-1.1 0-1.4L5.2 2.1C4.6 1.8 4 2.2 4 2.8Z"/></svg><span>Get it on<b>Google Play</b></span></a>
         <a class="btn btn-ghost" href="#how">See how it works ↓</a>
       </div>
       <p class="fine in" style="--i:4"><b>Free</b> for the essentials · <b>Pro $9.99</b> once, 7-day free trial</p>
@@ -884,8 +884,8 @@ footer nav{display:flex;margin:0;gap:22px}
 <section class="final">
   <div class="wrap">
     <h2 class="rise">Clear it <span class="grad">once.</span></h2>
-    <p class="lead rise">ZNM is in beta. Email us your Google account and your watch model: we add you to the test on Google Play and send you the Notify+ watch app. Testers get Pro free, for good.</p>
-    <div class="ctas rise"><a class="btn btn-main" href="mailto:watch@ab.team?subject=ZNM%20beta&amp;body=Hi%21%20I%27d%20like%20to%20test%20ZNM.%0A%0AGoogle%20account%20email%20%28for%20Google%20Play%29%3A%20%0AWatch%20model%20%28e.g.%20Balance%202%2C%20Active%202%2C%20T-Rex%203%29%3A%20%0APhone%20model%20%2B%20Android%20version%3A%20%0A" target="_blank" rel="noopener">Join the beta</a></div>
+    <p class="lead rise">ZNM is on Google Play. Install it, give it notification access, and your next delete on the watch marks the chat as read. Pro comes with a 7-day free trial.</p>
+    <div class="ctas rise"><a class="btn btn-main" href="https://play.google.com/store/apps/details?id=team.ab.znm" target="_blank" rel="noopener">Get it on Google Play</a></div>
   </div>
 </section>
 </main>
